@@ -1,0 +1,14 @@
+{
+  "name": "king-m4-tsa2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss -o dist/css"
+  },
+  "author": "Charles King",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
