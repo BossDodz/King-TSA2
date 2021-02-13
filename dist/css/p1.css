@@ -58,7 +58,8 @@
     #main-content .container td,
     #main-content .container th {
       border: 1px solid black;
-      border-collapse: collapse; }
+      border-collapse: collapse;
+      background: white; }
     #main-content .container td:nth-child(7n + 0),
     #main-content .container th:nth-child(7n + 0) {
       color: red; }
@@ -70,6 +71,10 @@
       #main-content .container td.mark {
         color: black;
         background: #f6961c; }
+      #main-content .container td:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: 0.2s ease-out; }
 
 .error {
   display: flex;

@@ -12,7 +12,11 @@ require_once('./_partial.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/p1.css">
-    <title>Problem 1</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="./img/icons/site.webmanifest">
+    <title>KCalendar</title>
 </head>
 
 <body>
@@ -53,41 +57,8 @@ require_once('./_partial.php');
         </div>
         <?php
         if ($isGood) {
-            if (!validate($month_s, $bday)) {
-                echo "<span class='error'>Selected date is invalid.</span>";
-            } else if (validate($month_s, $bday)) {
-                echo "<h1 class='month_name'>" . ucfirst($month_s) . "</h1>";
-                echo "<div class='container'><table><tr>";
-                echo "<th>Monday</th>
-                        <th>Tuesday</th>
-                    <th>Wednesday</th>
-                     <th>Thursday</th>
-                    <th>Friday</th>
-                 <th>Saturday</th>
-                 <th>Sunday</th>
-                 </tr><tr>      
-                ";
-                for ($day = 1; $day <= $month; $day++) {
-                    if ($day % 7 == 0) {
-                        if ($day == $bday) {
-                            echo "<td class='mark'>$day</td></tr><tr>";
-                        } else {
-                            echo "<td>$day</td></tr><tr>";
-                        }
-                    } else {
-                        if ($day == $bday) {
-                            echo "<td class='mark'>$day</td>";
-                        } else {
-                            echo "<td>$day</td>";
-                        }
-                    }
-                }
-                echo "</tr></table></div>";
-            }
+            makeTable();
         }
-
-
-
         ?>
     </main>
 </body>

@@ -32,3 +32,40 @@ if (in_array($month_s, $month31)) {
 } else {
     $month = 29;
 }
+
+
+function makeTable()
+{
+    global $month_s, $bday, $month;
+    if (!validate($month_s, $bday)) {
+        echo "<span class='error'>Selected date is invalid.</span>";
+    } else if (validate($month_s, $bday)) {
+        echo "<h1 class='month_name'>" . ucfirst($month_s) . "</h1>";
+        echo "<div class='container'><table><tr>";
+        echo "<th>Monday</th>
+                <th>Tuesday</th>
+            <th>Wednesday</th>
+             <th>Thursday</th>
+            <th>Friday</th>
+         <th>Saturday</th>
+         <th>Sunday</th>
+         </tr><tr>      
+        ";
+        for ($day = 1; $day <= $month; $day++) {
+            if ($day % 7 == 0) {
+                if ($day == $bday) {
+                    echo "<td class='mark'>$day</td></tr><tr>";
+                } else {
+                    echo "<td>$day</td></tr><tr>";
+                }
+            } else {
+                if ($day == $bday) {
+                    echo "<td class='mark'>$day</td>";
+                } else {
+                    echo "<td>$day</td>";
+                }
+            }
+        }
+        echo "</tr></table></div>";
+    }
+}

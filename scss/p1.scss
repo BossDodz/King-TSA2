@@ -87,6 +87,7 @@
     th {
       border: 1px solid black;
       border-collapse: collapse;
+      background: white;
     }
     td:nth-child(7n + 0),
     th:nth-child(7n + 0) {
@@ -102,6 +103,12 @@
       &.mark {
         color: $header-color;
         background: $header-text-special;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: 0.2s ease-out;
       }
     }
   }
