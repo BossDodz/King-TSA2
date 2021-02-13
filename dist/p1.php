@@ -1,3 +1,9 @@
+<?php
+require_once('./_partial.php');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,11 +23,42 @@
         </div>
     </header>
     <main id="main-content">
-        <div class="container">
-            <?php
-            $bday = 31;
-            echo "<table><tr>";
-            echo "<th>Monday</th>
+        <div class="inputs">
+            <form action="p1.php" method="get">
+                <ul class="inp-item">
+                    <li class="list-item"><label for="months">Select month:</label>
+                        <select name="months" id="months">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                    </li>
+                    <li class="list-item"><label for="day">Select day:</label>
+                        <input type="number" name="day" id="day" autocomplete="off" required>
+                    </li>
+                    <li class="list-item">
+                        <input type="submit" value="Submit" id="btn-submit">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <?php
+        if ($isGood) {
+            if (!validate($month_s, $bday)) {
+                echo "<span class='error'>Selected date is invalid.</span>";
+            } else if (validate($month_s, $bday)) {
+                echo "<h1 class='month_name'>" . ucfirst($month_s) . "</h1>";
+                echo "<div class='container'><table><tr>";
+                echo "<th>Monday</th>
                         <th>Tuesday</th>
                     <th>Wednesday</th>
                      <th>Thursday</th>
@@ -30,26 +67,28 @@
                  <th>Sunday</th>
                  </tr><tr>      
                 ";
-            for ($day = 1; $day <= 31; ++$day) {
-                if ($day % 7 == 0) {
-                    if ($day == $bday) {
-                        echo "<td class='mark'>$day</td></tr><tr>";
+                for ($day = 1; $day <= $month; $day++) {
+                    if ($day % 7 == 0) {
+                        if ($day == $bday) {
+                            echo "<td class='mark'>$day</td></tr><tr>";
+                        } else {
+                            echo "<td>$day</td></tr><tr>";
+                        }
                     } else {
-                        echo "<td>$day</td></tr><tr>";
-                    }
-                } else {
-                    if ($day == $bday) {
-                        echo "<td class='mark'>$day</td>";
-                    } else {
-                        echo "<td>$day</td>";
+                        if ($day == $bday) {
+                            echo "<td class='mark'>$day</td>";
+                        } else {
+                            echo "<td>$day</td>";
+                        }
                     }
                 }
+                echo "</tr></table></div>";
             }
+        }
 
 
 
-            ?>
-        </div>
+        ?>
     </main>
 </body>
 
