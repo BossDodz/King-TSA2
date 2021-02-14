@@ -1,0 +1,78 @@
+@import "./partials/config";
+@import "./partials/mobile";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-header {
+  background: $header-color;
+  color: $header-text;
+  padding: 15px;
+  padding-left: 15%;
+  .header-span {
+    color: $header-text-special;
+  }
+}
+
+#main-content {
+  width: 100%;
+  height: auto;
+  padding: 5% 15% 5% 15%;
+  margin-bottom: 7rem;
+
+  .text-special {
+    color: $header-text-special;
+    font-weight: bolder;
+  }
+
+  .card {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+  }
+
+  .label {
+    padding-bottom: 15px;
+  }
+
+  table,
+  tr,
+  th,
+  td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th {
+    color: $header-text-special;
+  }
+
+  td {
+    max-width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
+    }
+
+    &:not(:nth-child(1)) {
+      padding: 30px;
+    }
+  }
+}
+
+#main-footer {
+  background: $header-color;
+  color: $header-text;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+}

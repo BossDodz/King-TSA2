@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media screen and (max-width: 1100px) {
+  #main-content {
+    padding: 5% 20px 0 20px !important; }
+    #main-content .card {
+      margin-bottom: 5% !important; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+#main-header {
+  background: black;
+  color: whitesmoke;
+  padding: 15px;
+  padding-left: 15%; }
+  #main-header .header-span {
+    color: #f6961c; }
+
+#main-content {
+  width: 100%;
+  height: auto;
+  padding: 5% 15% 5% 15%;
+  margin-bottom: 7rem; }
+  #main-content .text-special {
+    color: #f6961c;
+    font-weight: bolder; }
+  #main-content .card {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem; }
+  #main-content .label {
+    padding-bottom: 15px; }
+  #main-content table,
+  #main-content tr,
+  #main-content th,
+  #main-content td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse; }
+  #main-content th {
+    color: #f6961c; }
+  #main-content td {
+    max-width: 100%; }
+    #main-content td img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom; }
+    #main-content td:not(:nth-child(1)) {
+      padding: 30px; }
+
+#main-footer {
+  background: black;
+  color: whitesmoke;
+  padding: 30px;
+  position: relative;
+  bottom: 0; }
