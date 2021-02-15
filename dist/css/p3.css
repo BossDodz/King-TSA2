@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media screen and (max-width: 1100px) {
+  #main-header {
+    padding: 15px !important;
+    text-align: center !important; }
+  #main-content {
+    padding: 5% 20px 0 20px !important; }
+    #main-content .card {
+      margin-bottom: 5% !important; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+#main-header {
+  background: black;
+  color: whitesmoke;
+  padding: 15px;
+  padding-left: 15%; }
+  #main-header .header-span {
+    color: #f6961c; }
+
+#main-content {
+  height: calc(100vh - (89px + 92px));
+  padding: 2% 15% 5% 15%; }
+  #main-content .section-container {
+    position: relative; }
+    #main-content .section-container .sec {
+      position: absolute;
+      margin-top: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 300px;
+      display: none; }
+      #main-content .section-container .sec .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; }
+      #main-content .section-container .sec .inputs {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 20px 20px 20px; }
+        #main-content .section-container .sec .inputs .inp {
+          padding-bottom: 10px; }
+          #main-content .section-container .sec .inputs .inp input::-webkit-outer-spin-button,
+          #main-content .section-container .sec .inputs .inp input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; }
+          #main-content .section-container .sec .inputs .inp input[type="number"] {
+            -moz-appearance: textfield; }
+          #main-content .section-container .sec .inputs .inp [type="number"] {
+            width: 180px; }
+          #main-content .section-container .sec .inputs .inp select {
+            width: 72.5px; }
+
+#main-footer {
+  background: black;
+  color: whitesmoke;
+  padding: 30px;
+  position: relative;
+  bottom: 0; }

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media screen and (max-width: 1100px) {
+  #main-header {
+    padding: 15px !important;
+    text-align: center !important; }
+  #main-content {
+    padding: 5% 20px 0 20px !important; }
+    #main-content .card {
+      margin-bottom: 5% !important; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+#main-header {
+  background: black;
+  color: whitesmoke;
+  padding: 15px 15px 15px 15%; }
+  #main-header .heading-span {
+    color: #f6961c; }
+
+#main-footer {
+  position: relative;
+  bottom: 0;
+  background: black;
+  color: whitesmoke;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  #main-footer .nav-list {
+    list-style: none;
+    display: flex;
+    float: left; }
+    #main-footer .nav-list .nav-item {
+      padding: 1rem; }
+      #main-footer .nav-list .nav-item a {
+        color: whitesmoke; }
+        #main-footer .nav-list .nav-item a:hover {
+          color: #f6961c;
+          transition: 0.2s ease-out; }
+
+#main-content {
+  width: 100%;
+  padding: 2% 15% 0 15%;
+  min-height: calc(100vh - (94.5px + 89px)); }
+  #main-content .container {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 2rem; }
+    #main-content .container .inputs .label {
+      text-align: center;
+      margin-bottom: 10px; }
+      #main-content .container .inputs .label .label-span {
+        color: #f6961c; }
+    #main-content .container .inputs #string {
+      width: 100%;
+      height: 40px;
+      font-size: larger; }
+    #main-content .container .inputs .buttons {
+      display: flex;
+      flex-flow: column wrap;
+      margin-top: 2rem; }
+      #main-content .container .inputs .buttons #clear {
+        background: black;
+        color: white; }
+      #main-content .container .inputs .buttons .button-hover, #main-content .container .inputs .buttons .button:hover {
+        transition: 0.2s ease-out;
+        color: black !important;
+        background: #f6961c !important; }
+      #main-content .container .inputs .buttons .button {
+        cursor: pointer;
+        height: 40px;
+        font-size: larger;
+        border: 1px solid black;
+        background: transparent;
+        padding: 5px;
+        max-width: 100%;
+        margin-bottom: 15px; }
+
+.card-container {
+  margin-top: 2rem;
+  padding: 2rem; }
+  .card-container .card {
+    border: 1px solid black;
+    margin-bottom: 2rem; }
+    .card-container .card .card-title {
+      text-align: center;
+      background: black;
+      color: whitesmoke;
+      width: 100%;
+      padding: 10px; }
+      .card-container .card .card-title .card-span {
+        color: #f6961c;
+        font-weight: bolder; }
+    .card-container .card .table-container {
+      margin-top: 10px;
+      padding: 1rem; }
+      .card-container .card .table-container table {
+        table-layout: fixed;
+        width: 100%; }
+      .card-container .card .table-container td {
+        width: 50%;
+        font-size: 21px;
+        padding: 10px; }
+        .card-container .card .table-container td:first-child {
+          color: #f6961c;
+          font-weight: bolder; }
+        .card-container .card .table-container td.arr-data {
+          color: black; }

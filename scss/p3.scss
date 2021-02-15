@@ -1,0 +1,78 @@
+@import "./partials/config";
+@import "./partials/mobile";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-header {
+  background: $header-color;
+  color: $header-text;
+  padding: 15px;
+  padding-left: 15%;
+  .header-span {
+    color: $header-text-special;
+  }
+}
+
+#main-content {
+  height: calc(100vh - (89px + 92px));
+  padding: 2% 15% 5% 15%;
+
+  .section-container {
+    position: relative;
+    .sec {
+      position: absolute;
+      margin-top: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 300px;
+      display: none;
+
+      .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .inputs {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 20px 20px 20px;
+
+        .inp {
+          padding-bottom: 10px;
+
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+
+          [type="number"] {
+            width: 180px;
+          }
+
+          select {
+            width: 300px - 227.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-footer {
+  background: $header-color;
+  color: $header-text;
+  padding: 30px;
+  position: relative;
+  bottom: 0;
+}
