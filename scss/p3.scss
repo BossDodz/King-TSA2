@@ -21,50 +21,27 @@
   min-height: calc(100vh - (89px + 92px));
   padding: 2% 15% 5% 15%;
 
-  .section-container {
-    position: relative;
-    .sec {
-      position: absolute;
-      margin-top: 20px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .volume {
+      width: 100%;
+      table-layout: fixed;
+      text-align: center;
+    }
+
+    .volume,
+    tr,
+    td,
+    th {
       border: 1px solid black;
-      border-radius: 10px;
-      width: 300px;
-      display: none;
+      border-collapse: collapse;
+    }
 
-      .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-
-      .inputs {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        padding: 0 20px 20px 20px;
-
-        .inp {
-          padding-bottom: 10px;
-
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-          input[type="number"] {
-            -moz-appearance: textfield;
-          }
-
-          [type="number"] {
-            width: 180px;
-          }
-
-          select {
-            width: 300px - 227.5px;
-          }
-        }
-      }
+    td {
+      padding: 1rem;
     }
   }
 }

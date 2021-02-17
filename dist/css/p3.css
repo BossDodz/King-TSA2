@@ -25,37 +25,22 @@
 #main-content {
   min-height: calc(100vh - (89px + 92px));
   padding: 2% 15% 5% 15%; }
-  #main-content .section-container {
-    position: relative; }
-    #main-content .section-container .sec {
-      position: absolute;
-      margin-top: 20px;
+  #main-content .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #main-content .container .volume {
+      width: 100%;
+      table-layout: fixed;
+      text-align: center; }
+    #main-content .container .volume,
+    #main-content .container tr,
+    #main-content .container td,
+    #main-content .container th {
       border: 1px solid black;
-      border-radius: 10px;
-      width: 300px;
-      display: none; }
-      #main-content .section-container .sec .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px; }
-      #main-content .section-container .sec .inputs {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        padding: 0 20px 20px 20px; }
-        #main-content .section-container .sec .inputs .inp {
-          padding-bottom: 10px; }
-          #main-content .section-container .sec .inputs .inp input::-webkit-outer-spin-button,
-          #main-content .section-container .sec .inputs .inp input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0; }
-          #main-content .section-container .sec .inputs .inp input[type="number"] {
-            -moz-appearance: textfield; }
-          #main-content .section-container .sec .inputs .inp [type="number"] {
-            width: 180px; }
-          #main-content .section-container .sec .inputs .inp select {
-            width: 72.5px; }
+      border-collapse: collapse; }
+    #main-content .container td {
+      padding: 1rem; }
 
 #main-footer {
   position: relative;
