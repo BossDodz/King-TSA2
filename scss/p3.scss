@@ -18,7 +18,7 @@
 }
 
 #main-content {
-  height: calc(100vh - (89px + 92px));
+  min-height: calc(100vh - (89px + 92px));
   padding: 2% 15% 5% 15%;
 
   .section-container {
@@ -70,9 +70,9 @@
 }
 
 #main-footer {
+  position: relative;
+  bottom: 0;
   background: $header-color;
   color: $header-text;
   padding: 30px;
-  position: relative;
-  bottom: 0;
 }

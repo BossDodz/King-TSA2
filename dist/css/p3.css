@@ -23,7 +23,7 @@
     color: #f6961c; }
 
 #main-content {
-  height: calc(100vh - (89px + 92px));
+  min-height: calc(100vh - (89px + 92px));
   padding: 2% 15% 5% 15%; }
   #main-content .section-container {
     position: relative; }
@@ -58,8 +58,8 @@
             width: 72.5px; }
 
 #main-footer {
+  position: relative;
+  bottom: 0;
   background: black;
   color: whitesmoke;
-  padding: 30px;
-  position: relative;
-  bottom: 0; }
+  padding: 30px; }

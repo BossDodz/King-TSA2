@@ -55,7 +55,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec rh">
@@ -81,7 +81,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec c">
@@ -98,7 +98,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec lwh">
@@ -133,7 +133,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec rrh">
@@ -168,7 +168,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec rrh-c">
@@ -203,7 +203,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec abc">
@@ -238,7 +238,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec ah">
@@ -264,7 +264,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                         <div class="sec ddl">
@@ -299,7 +299,7 @@
                                         <option value="km">km</option>
                                     </select>
                                 </div>
-                                <input type="submit" value="CALCULATE">
+                                <input type="button" value="CALCULATE" class="btn-submit">
                             </div>
                         </div>
                     </div>

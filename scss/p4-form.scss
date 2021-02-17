@@ -1,0 +1,165 @@
+@import "./partials/config";
+@import "./partials/mobile";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+}
+
+#main-content {
+  width: 100%;
+  padding: 2% 25% 0 25%;
+  .container {
+    border: 1px solid black;
+    margin-bottom: 4rem;
+
+    .section {
+      position: relative;
+
+      hr {
+        margin-top: 10px;
+      }
+
+      .section-title {
+        background: $header-text-special;
+        padding: 15px;
+      }
+
+      .inputs {
+        width: 100%;
+      }
+
+      &.affiliate {
+        .data-container .inputs .label-box-aff {
+          width: auto;
+          float: left;
+        }
+      }
+
+      &.skills {
+        .data-container {
+          padding: 1rem;
+          .inputs .skills-table {
+            width: 100%;
+            table-layout: fixed;
+
+            tr {
+              td:first-child {
+                width: 5%;
+              }
+              td:nth-child(2) {
+                width: 30%;
+              }
+              td:nth-child(3) {
+                width: 25%;
+              }
+            }
+
+            .level {
+              position: relative;
+              border: 1px solid black;
+              height: 30px;
+              width: 100%;
+
+              .level-bar {
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: $header-text-special;
+                height: 100%;
+
+                .level-underlay {
+                  font-size: 20px;
+                  padding: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.personal-info .data-container {
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+
+        .img-container {
+          width: 50%;
+          border: 1px solid black;
+
+          img {
+            position: relative;
+            width: 100%;
+          }
+        }
+
+        .inputs {
+          padding-left: 1rem;
+          width: 50%;
+        }
+      }
+
+      .input-items {
+        list-style: none;
+
+        .input-list {
+          padding: 15px;
+
+          .date {
+            width: 60%;
+            table-layout: fixed;
+            margin-left: -3px;
+          }
+
+          .objective {
+            width: 100%;
+            table-layout: fixed;
+
+            td {
+              text-align: center;
+            }
+
+            td:nth-child(odd) {
+              width: 10%;
+            }
+            td:nth-child(even) {
+              width: 80%;
+              font-style: italic;
+              font-size: 20px;
+            }
+          }
+
+          .icon {
+            width: 35px;
+            height: 24px;
+            float: left;
+
+            .input-label {
+              color: $header-text-special;
+            }
+          }
+          .label-box-educ {
+            float: left;
+            width: 100px;
+          }
+        }
+      }
+
+      span {
+        font-size: 20px;
+
+        &.input-label {
+          padding-right: 10px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

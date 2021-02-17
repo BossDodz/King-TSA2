@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media screen and (max-width: 1100px) {
+  #main-header {
+    padding: 15px !important;
+    text-align: center !important; }
+  #main-content {
+    padding: 5% 20px 0 20px !important; }
+    #main-content .card {
+      margin-bottom: 5% !important; } }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+#main-header {
+  padding: 15px 15px 15px 25%;
+  background: black;
+  color: whitesmoke; }
+  #main-header .header-span {
+    color: #f6961c; }
+
+#main-content {
+  width: 100%;
+  padding: 2% 25% 0 25%; }
+  #main-content .container {
+    padding-bottom: 5rem; }
+    #main-content .container .section {
+      border: 1px solid black;
+      margin-bottom: 10px; }
+      #main-content .container .section .submit-btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem; }
+        #main-content .container .section .submit-btn #btn-gen {
+          cursor: pointer;
+          border: 1px solid black;
+          border-radius: 30px;
+          background: transparent;
+          font-size: larger;
+          padding: 10px; }
+          #main-content .container .section .submit-btn #btn-gen:hover {
+            background: #f6961c;
+            color: black;
+            transition: 0.2s ease-out; }
+      #main-content .container .section.personal-info {
+        position: relative; }
+        #main-content .container .section.personal-info .profile-pic {
+          width: 35%;
+          height: 75%;
+          position: absolute;
+          right: 20px;
+          top: 4rem;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center; }
+          #main-content .container .section.personal-info .profile-pic .img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black; }
+            #main-content .container .section.personal-info .profile-pic .img-container .underlay {
+              z-index: -1;
+              position: absolute;
+              display: flex;
+              flex-flow: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%; }
+            #main-content .container .section.personal-info .profile-pic .img-container #profile-img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              background-size: contain; }
+          #main-content .container .section.personal-info .profile-pic .img-select {
+            margin-top: 20px; }
+            #main-content .container .section.personal-info .profile-pic .img-select #img {
+              display: none; }
+            #main-content .container .section.personal-info .profile-pic .img-select.button,
+            #main-content .container .section.personal-info .profile-pic .img-select.button label {
+              cursor: pointer; }
+            #main-content .container .section.personal-info .profile-pic .img-select.button {
+              border: 1px solid black;
+              border-radius: 30px;
+              background: transparent;
+              font-size: larger;
+              padding: 10px; }
+              #main-content .container .section.personal-info .profile-pic .img-select.button:hover {
+                background: #f6961c;
+                color: black;
+                transition: 0.2s ease-out; }
+      #main-content .container .section .section-title {
+        background: black;
+        color: whitesmoke;
+        width: 100%;
+        padding-left: 10px; }
+      #main-content .container .section .form-elements {
+        padding: 1rem;
+        width: 60%; }
+        #main-content .container .section .form-elements .inputs input,
+        #main-content .container .section .form-elements .inputs label {
+          margin: 10px; }
+        #main-content .container .section .form-elements .inputs [type="text"],
+        #main-content .container .section .form-elements .inputs [type="email"] {
+          width: 100%; }
+        #main-content .container .section .form-elements .inputs .numbers {
+          width: calc(100% + 20px);
+          display: flex;
+          justify-content: space-around;
+          align-self: start; }
+          #main-content .container .section .form-elements .inputs .numbers [type="number"] {
+            width: 50%; }
+        #main-content .container .section .form-elements .inputs.ranks {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-around;
+          align-items: flex-start; }
+          #main-content .container .section .form-elements .inputs.ranks [type="text"] {
+            width: 60%; }
+          #main-content .container .section .form-elements .inputs.ranks [type="number"] {
+            width: 30%; }
+        #main-content .container .section .form-elements .affiliates,
+        #main-content .container .section .form-elements .school,
+        #main-content .container .section .form-elements .work {
+          padding-bottom: 20px; }
+          #main-content .container .section .form-elements .affiliates:not(:last-child),
+          #main-content .container .section .form-elements .school:not(:last-child),
+          #main-content .container .section .form-elements .work:not(:last-child) {
+            border-bottom: 2px solid black; }
+        #main-content .container .section .form-elements .affiliates:not(:first-child),
+        #main-content .container .section .form-elements .work:not(:first-child) {
+          padding-top: 15px; }
+
+#main-footer {
+  position: relative;
+  bottom: 0;
+  background: black;
+  color: whitesmoke;
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  #main-footer .nav-list {
+    list-style: none;
+    display: flex;
+    float: left; }
+    #main-footer .nav-list .nav-item {
+      padding: 1rem; }
+      #main-footer .nav-list .nav-item a {
+        color: whitesmoke; }
+        #main-footer .nav-list .nav-item a:hover {
+          color: #f6961c;
+          transition: 0.2s ease-out; }
