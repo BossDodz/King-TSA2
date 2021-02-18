@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
     <link rel="manifest" href="img/icons/site.webmanifest">
-    <title>Menu | Module 3</title>
+    <title>Menu | TSA 2</title>
 </head>
 
 <body id="body">
