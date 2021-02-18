@@ -24,7 +24,7 @@
 
 #main-content {
   min-height: calc(100vh - (89px + 92px));
-  padding: 2% 15% 5% 15%; }
+  padding: 2% 15% 2% 15%; }
   #main-content .container {
     display: flex;
     justify-content: center;
@@ -33,13 +33,35 @@
       width: 100%;
       table-layout: fixed;
       text-align: center; }
+      #main-content .container .volume #main-table-header {
+        font-size: 25px;
+        background: #f6961c;
+        color: black; }
+      #main-content .container .volume th {
+        font-size: 20px;
+        background: black;
+        color: whitesmoke; }
+      #main-content .container .volume td {
+        font-size: 20px; }
+        #main-content .container .volume td img {
+          height: auto;
+          width: auto; }
+      #main-content .container .volume .vars, #main-content .container .volume .var1, #main-content .container .volume .var2, #main-content .container .volume .var3 {
+        font-weight: bolder; }
+      #main-content .container .volume .var1 {
+        color: #f6961c; }
+      #main-content .container .volume .var2 {
+        color: #da1633; }
+      #main-content .container .volume .var3 {
+        color: #7b0a1c; }
     #main-content .container .volume,
     #main-content .container tr,
     #main-content .container td,
     #main-content .container th {
-      border: 1px solid black;
+      border: 3px solid black;
       border-collapse: collapse; }
-    #main-content .container td {
+    #main-content .container td,
+    #main-content .container th {
       padding: 1rem; }
 
 #main-footer {

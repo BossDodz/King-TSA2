@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss -o dist/css"
+    "sass": "node-sass -w scss -o dist/css",
+    "serv-sass" : "node-sass -w scss -o dist/css/serv"
   },
   "author": "Charles King",
   "license": "MIT",

@@ -19,7 +19,7 @@
 
 #main-content {
   min-height: calc(100vh - (89px + 92px));
-  padding: 2% 15% 5% 15%;
+  padding: 2% 15% 2% 15%;
 
   .container {
     display: flex;
@@ -30,17 +30,55 @@
       width: 100%;
       table-layout: fixed;
       text-align: center;
+
+      #main-table-header {
+        font-size: 25px;
+        background: $header-text-special;
+        color: $header-color;
+      }
+
+      th {
+        font-size: 20px;
+        background: $header-color;
+        color: $header-text;
+      }
+
+      td {
+        font-size: 20px;
+        img {
+          height: auto;
+          width: auto;
+        }
+      }
+
+      .vars {
+        font-weight: bolder;
+      }
+
+      .var1 {
+        @extend .vars;
+        color: $header-text-special;
+      }
+      .var2 {
+        @extend .vars;
+        color: #da1633;
+      }
+      .var3 {
+        @extend .vars;
+        color: #7b0a1c;
+      }
     }
 
     .volume,
     tr,
     td,
     th {
-      border: 1px solid black;
+      border: 3px solid black;
       border-collapse: collapse;
     }
 
-    td {
+    td,
+    th {
       padding: 1rem;
     }
   }

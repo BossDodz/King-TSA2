@@ -43,7 +43,7 @@ function getSkillPerc($arr, $column)
 
 
 /* IMG */
-$img_dir = "img/";
+$img_dir = "../img/";
 $img_name = $img_dir . basename($_FILES['img']['name']);
 $uploadSuccess = 1;
 $img_file_type = strtolower(pathinfo($img_name, PATHINFO_EXTENSION));

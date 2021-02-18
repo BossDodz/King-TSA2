@@ -1,4 +1,4 @@
-<?php require_once('./_partial2.php'); ?>
+<?php require_once('./partials/_partial2.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KFruits</title>
-    <link rel="stylesheet" href="./css/p2.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
-    <link rel="manifest" href="./img/icons/site.webmanifest">
+    <link rel="stylesheet" href="../css/serv/p2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+    <link rel="manifest" href="../img/icons/site.webmanifest">
 </head>
 
 <body>
