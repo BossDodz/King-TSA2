@@ -30,7 +30,7 @@
         </div>
     </main>
 </body>
-<script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+<script type="text/javascript" src="../js/vanilla-tilt.min.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 25,
